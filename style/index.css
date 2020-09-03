@@ -114,11 +114,33 @@ a{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	opacity:0.75;
+	font-size: 5rem;
 }
 .headerButton{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, 200%);
+	font-size: 2.5rem;
+}
+.projects{
+	display:flex;
+}
+
+.about{
+	display:flex;
+}
+.footerSection{
+	width:100%;
+	height:20vh;
+	background-color: #4f4f4f;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+
+}
+#copyright{
+	font-size:1rem;
 }
 
