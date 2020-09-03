@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather+Sans&display=swap');
+/* CSS Reset */
 /* #region*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -19,7 +22,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -48,3 +51,74 @@ table {
 	border-spacing: 0;
 }
 /* #endregion*/
+/* Universal Styles */
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    border:1px solid grey;
+}
+/* General Styling */
+html{
+    font: size 62.5%;
+}
+body{
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Abril Fatface', cursive;
+}
+a{
+    text-decoration: none;
+}
+/* Body Styling */
+.navbar{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+}
+.nameContainer{
+	display:flex;
+	padding:2%;
+	width:25%;
+}
+.nameContainer p{
+	padding:2%;
+	width:100%;
+}
+.navContainer{
+	display:flex;
+	padding:2%;
+}
+.navLinks{
+	padding: 2%;
+    color: black;
+}
+.headerSection{
+	width:100%;
+	position: relative;
+	text-align: center;
+	color:white;
+	display:flex;
+	flex-direction:column;
+}
+.bgHeaderImg{
+	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/header-bkgd-unsplash.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	height:80vh;
+}
+.mainHeader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.headerButton{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 200%);
+}
+
