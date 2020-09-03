@@ -73,10 +73,12 @@ a{
     text-decoration: none;
 }
 /* Body Styling */
+/* Navigation Bar */
 .navbar{
 	display:flex;
 	justify-content:space-between;
 	width:100%;
+	background-color: #4f4f4f;
 }
 .nameContainer{
 	display:flex;
@@ -95,6 +97,7 @@ a{
 	padding: 2%;
     color: black;
 }
+/* Header Section */
 .headerSection{
 	width:100%;
 	position: relative;
@@ -124,13 +127,64 @@ a{
 	transform: translate(-50%, 200%);
 	font-size: 2.5rem;
 }
+/* About Squares */
+.squares{
+	width:30%;
+	margin:2%;
+}
+/* Projects Section */
 .projects{
 	display:flex;
+	justify-content:space-evenly;
 }
-
+#squaresBg1{
+	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/coffee-ph1-unsplash.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+    width: 30%;
+}
+#squaresBg2{
+	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/code-ph2-unsplash.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+    width: 30%;
+}
+#squaresBg3{
+	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/music-ph3-unsplash.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+    width: 30%;
+}
+/* About Section */
 .about{
 	display:flex;
+	justify-content:space-evenly;
 }
+#squaresBg4{
+	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/neon-ph4-unsplash.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+    width: 30%;
+}
+#squaresBg5{
+	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/van-ph5-unsplash.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+    width: 30%;
+}
+#squaresBg6{
+	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/travel-ph6-unsplash.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+    width: 30%;
+}
+/* Footer */
 .footerSection{
 	width:100%;
 	height:20vh;
