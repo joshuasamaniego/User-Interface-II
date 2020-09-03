@@ -64,7 +64,8 @@ html{
 body{
     font-size: 2rem;
     line-height: 1.5;
-    font-family: 'Merriweather Sans', sans-serif;
+	font-family: 'Merriweather Sans', sans-serif;
+	background-color:#FFFAF1;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Abril Fatface', cursive;
@@ -79,9 +80,11 @@ a{
 	justify-content:space-between;
 	width:100%;
 	background-color: #4f4f4f;
+	height:10vh;
 }
 .nameContainer{
 	display:flex;
+	align-items: center;
 	padding:2%;
 	width:25%;
 }
@@ -91,6 +94,7 @@ a{
 }
 .navContainer{
 	display:flex;
+	align-items: center;
 	padding:2%;
 }
 .navLinks{
@@ -110,7 +114,10 @@ a{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/header-bkgd-unsplash.jpg');
 	background-size:cover;
 	background-repeat: no-repeat;
-	height:80vh;
+	height:90vh;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
 }
 .mainHeader{
 	position: absolute;
@@ -129,8 +136,19 @@ a{
 }
 /* About Squares */
 .squares{
-	width:30%;
 	margin:2%;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 50vh;
+	width: 30%;
+	border-radius:20%;
+	display:flex;
+	justify-content: center;
+    align-items: center;
+}
+.squares a{
+	justify-content: center;
 }
 /* Projects Section */
 .projects{
@@ -139,24 +157,12 @@ a{
 }
 #squaresBg1{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/coffee-ph1-unsplash.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	height: 50vh;
-    width: 30%;
 }
 #squaresBg2{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/code-ph2-unsplash.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	height: 50vh;
-    width: 30%;
 }
 #squaresBg3{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/music-ph3-unsplash.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	height: 50vh;
-    width: 30%;
 }
 /* About Section */
 .about{
@@ -165,24 +171,13 @@ a{
 }
 #squaresBg4{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/neon-ph4-unsplash.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	height: 50vh;
-    width: 30%;
 }
 #squaresBg5{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/van-ph5-unsplash.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	height: 50vh;
-    width: 30%;
 }
 #squaresBg6{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/travel-ph6-unsplash.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	height: 50vh;
-    width: 30%;
+	
 }
 /* Footer */
 .footerSection{
@@ -193,6 +188,11 @@ a{
 	flex-direction:column;
 	align-items:center;
 
+}
+.footerNav{
+	margin: 2%;
+    width: 20%;
+    text-align: center;
 }
 #copyright{
 	font-size:1rem;
