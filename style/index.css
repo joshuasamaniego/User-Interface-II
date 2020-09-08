@@ -132,6 +132,7 @@ a{
 	opacity:0.75;
 	font-size: 5rem;
 	width: 100%;
+	align-items: center;
 }
 .headerButton{
 	position: absolute;
@@ -140,15 +141,21 @@ a{
 	transform: translate(-50%, 200%);
 	font-size: 2.5rem;
 	border-radius: 20px;
+	align-items: center;
 }
 /* Squares */
+.squaresContainer{
+	display:flex;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+}
 .squares{
 	margin:2%;
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	height: 50vh;
-	width: 30%;
+	width: 25%;
 	border-radius:20px;
 	display:flex;
 	justify-content: center;
@@ -165,10 +172,7 @@ a{
 	text-align: center;
 }
 /* Projects Section */
-.projects{
-	display:flex;
-	justify-content:space-evenly;
-}
+
 #squaresBg1{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/coffee-ph1-unsplash.jpg');
 }
@@ -179,10 +183,6 @@ a{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/music-ph3-unsplash.jpg');
 }
 /* About Section */
-.about{
-	display:flex;
-	justify-content:space-evenly;
-}
 #squaresBg4{
 	background-image:url('file:///Users/joshuasamaniego-evans/Desktop/LambdaProjects/User-Interface-II/assets/neon-ph4-unsplash.jpg');
 }
@@ -264,8 +264,9 @@ a{
 		font-size: 1.5rem;
 	}
 	.squares{
-		width: 50%;
+		width: 40%;
 		height: 40vh;
+		margin: 3% 0;
 	}
 }
 @media (max-width: 800px) {
@@ -276,7 +277,7 @@ a{
 		font-size:1.5rem;
 	}
 	.headerButton{
-		margin: 10% 0;
+		margin: 5% 0;
 	}
 }
 @media (max-width:500px) {
@@ -302,27 +303,24 @@ a{
 	.headerButton{
 		margin: 10% 0;
 	}
-	.projects{
+	.squaresContainer{
 		display:flex;
 		flex-wrap: wrap;
-		margin-top: 3%;
-	}
-	.about{
-		display:flex;
-		flex-wrap: wrap;
-		margin-bottom: 3%;
+		margin: 3% 0;
 	}
 	.squares {
 		display:flex;
 		flex-direction: column;
 		width: 45%;
+		height: 30vh;
 	}
 	.squares a{
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 	.footerNav{
-		font-size: 1rem;
-		margin: 2% 0;
+		font-size: 1.5rem;
+		width: 40%;
+		margin: 3% 0;
 	}
 	.icons{
 		width: 50%;
