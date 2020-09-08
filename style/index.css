@@ -131,6 +131,7 @@ a{
 	transform: translate(-50%, -50%);
 	opacity:0.75;
 	font-size: 5rem;
+	width: 100%;
 }
 .headerButton{
 	position: absolute;
@@ -274,6 +275,9 @@ a{
 	.footerNav{
 		font-size:1.5rem;
 	}
+	.headerButton{
+		margin: 10% 0;
+	}
 }
 @media (max-width:500px) {
 	.navbar{
@@ -298,9 +302,20 @@ a{
 	.headerButton{
 		margin: 10% 0;
 	}
+	.projects{
+		display:flex;
+		flex-wrap: wrap;
+		margin-top: 3%;
+	}
+	.about{
+		display:flex;
+		flex-wrap: wrap;
+		margin-bottom: 3%;
+	}
 	.squares {
 		display:flex;
 		flex-direction: column;
+		width: 45%;
 	}
 	.squares a{
 		font-size: 1rem;
