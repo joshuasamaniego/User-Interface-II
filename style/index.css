@@ -1,7 +1,7 @@
-/* Fonts */
+/* #region Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather+Sans&display=swap');
-/* CSS Reset */
-/* #region*/
+/* #endregion*/
+/* #region CSS Reset*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,13 +51,14 @@ table {
 	border-spacing: 0;
 }
 /* #endregion*/
-/* Universal Styles */
+/* #region Universal Styles */
 *{
     box-sizing: border-box;
     max-width: 100%;
     /* border:1px solid grey; */
 }
-/* General Styling */
+/* #endregion */
+/* #region General Styling */
 html{
     font: size 62.5%;
 }
@@ -73,7 +74,8 @@ h1,h2,h3,h4,h5,h6{
 a{
     text-decoration: none;
 }
-/* Body Styling */
+/* #endregion */
+/* #region Body Styling */
 /* Navigation Bar */
 .navbar{
 	display:flex;
@@ -86,7 +88,7 @@ a{
 	display:flex;
 	align-items: center;
 	padding:2%;
-	width:25%;
+	width:45%;
 	color: #FFFAF1;
 }
 .nameContainer p{
@@ -98,7 +100,7 @@ a{
 	align-items: center;
 	justify-content: space-between;
 	padding:2%;
-	width: 45%;
+	width: 47%;
 }
 .navLinks{
 	padding: 2%;
@@ -137,7 +139,7 @@ a{
 	transform: translate(-50%, 200%);
 	font-size: 2.5rem;
 }
-/* About Squares */
+/* Squares */
 .squares{
 	margin:2%;
 	background-size:cover;
@@ -157,6 +159,7 @@ a{
 	color: #4f4f4f;
 	padding:1%;
 	border:3px solid #4f4f4f;
+	text-align: center;
 }
 /* Projects Section */
 .projects{
@@ -190,7 +193,7 @@ a{
 /* Footer */
 .footerSection{
 	width:100%;
-	height:25vh;
+	height:25%;
 	background-color: #4f4f4f;
 	display:flex;
 	flex-direction:column;
@@ -221,7 +224,86 @@ a{
 #copyright{
 	font-size:1rem;
 	color:#FFFAF1;
-	margin-top:1%;
+	margin:1% 0;
 }
-
-
+/* #endregion */
+/* #region Media Queries */
+@media (max-width: 1200px) {
+	.navbar{
+		display:flex;
+		align-items: center;
+		height: 10%;
+		
+	}
+	.nameContainer{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.nameContainer p{
+		padding: 0;
+		justify-content: center;
+	}
+	.navContainer{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.mainHeader{
+		width: 100%;
+	}
+}
+@media (max-width: 900px) {
+	.navbar{
+		font-size: 1.5rem;
+	}
+	.squares{
+		width: 50%;
+		height: 40vh;
+	}
+}
+@media (max-width: 800px) {
+	.squares a{
+		font-size:1.5rem;
+	}
+	.footerNav{
+		font-size:1.5rem;
+	}
+}
+@media (max-width:500px) {
+	.navbar{
+		display:flex;
+		flex-direction: column;
+		text-align: center;
+		height: 40%;
+	}
+	.navContainer{
+		display:flex;
+		flex-direction: column;
+	}
+	.navContainer a{
+		border: 2px solid #FFFAF1;
+		margin: 1%;
+		border-radius: 20%;
+		padding: 1% 3%;
+	}
+	.nameContainer{
+		font-size: 2rem;
+	}
+	.headerButton{
+		margin: 10% 0;
+	}
+	.squaresContainer{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.squares {
+		width: 50%
+	}
+	.squares a{
+		font-size: 1rem;
+	}
+}
+/* #endregion */
